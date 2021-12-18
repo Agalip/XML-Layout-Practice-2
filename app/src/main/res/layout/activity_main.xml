@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/profileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/profilePhoto"
+        android:text="Elon Musk"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/verified"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/profileText"
+        android:background="@drawable/verified" />
+
+    <TextView
+        android:id="@+id/nick"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/verified"
+        android:text="\@elonmusk"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/date"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/nick"
+        android:text="Dec 12"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/dots" />
+
+    <TextView
+        android:id="@+id/contentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileText"
+
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/profilePhoto"
+        android:text="Sine qua non non"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/contentText"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/profilePhoto"
+        android:background="@drawable/photo" />
+
+    <ImageView
+        android:id="@+id/reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/profilePhoto"
+        android:background="@drawable/reply" />
+
+    <TextView
+        android:id="@+id/replyCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@id/reply"
+        android:text="5.4K"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/retweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/replyCount"
+        android:background="@drawable/retweet" />
+
+    <TextView
+        android:id="@+id/retweetCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@id/retweet"
+        android:text="2.8K"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/retweetCount"
+        android:background="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/likeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@id/like"
+        android:text="54K"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/likeCount"
+        android:background="@drawable/share" />
+
+
+</RelativeLayout>
